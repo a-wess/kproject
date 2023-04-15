@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
   background-color: white;
   height: 800px;
   position: relative;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 body {

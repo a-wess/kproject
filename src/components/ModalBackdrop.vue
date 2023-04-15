@@ -2,7 +2,7 @@
 import { watch, ref } from 'vue';
 import CloseButton from '../components/CloseButton.vue';
 
-const props = defineProps({
+defineProps({
     show: {
         type: Boolean,
         required: true,
@@ -113,10 +113,12 @@ watch(edge, value => {
 }
 
 .body {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
+    height: calc(100% - 40px);
     padding: 14px 25px 25px 25px;
     background-color: white;
-    height: calc(100% - 40px);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }

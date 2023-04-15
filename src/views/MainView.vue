@@ -1,9 +1,10 @@
 <script setup>
 import { ref } from 'vue';
-import ModalBackdrop from '../components/ModalBackdrop.vue';
+import ModalBackdrop from '@/components/ModalBackdrop.vue';
 import FirstStepView from './tax/FirstStepView.vue';
+import router from '@/router';
 
-const selected = ref('');
+const selected = ref(router.currentRoute.value.query.select);
 </script>
 
 <template>
@@ -38,5 +39,6 @@ const selected = ref('');
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0);
     padding: 1rem 2rem;
+    border-radius: 6px;
 }
 </style>
